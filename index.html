@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores amarillas</title>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #fff9c4 0%, #fff59d 100%);
+            color: #5d4037;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: rgba(255, 235, 59, 0.3);
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: #f57f17;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+              }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #827717;
+        }
+        
+        .flower-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .flower-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+             }
+        
+        .flower-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+        }
+        
+        .flower-image {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fffde7;
+            overflow: hidden;
+        }
+        
+        .flower-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 50px 25px;
+        }
+        
+        .flower-content {
+            padding: 20px;
+        }
+        
+        .flower-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #f57f17;
+            margin-bottom: 10px;
+        }
+        
+        .flower-description {
+            color: #5d4037;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        
+        .message-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(255, 253, 231, 0.7);
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .message-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #f57f17;
+            margin-bottom: 25px;
+        }
+        
+        .message-text {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: #5d4037;
+        }
+        
+        .decoration {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 2.5rem;
+            color: #f9a825;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(121, 85, 72, 0.9);
+            color: #fff;
+            margin-top: auto;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .footer-text {
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+                }
+            
+            .flower-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .message-title {
+                font-size: 2rem;
+            }
+            
+            .message-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Feliz Dia, Te Amo Mucho</h1>
+            <p class="subtitle">Esto es para ti mi niña</p>
+        </header>
+        
+            
+            <div class="flower-card">
+                <div class="flower-image">
+                     <img 
+                      src="https://res.cloudinary.com/dcq8gx5xz/image/upload/v1758408892/flores_amarillas_cciicu.avif" 
+                      />
+                <div class="flower-content">
+                </div>
+            </div>
+        <div class="message-section">
+            <p class="message-text">
+                En este dia te quiero dar las gracias mi niña por estar para mi,
+                por escucharme cuando lo  necesito y entenderme, por dejarme estar
+                en tu vida, por hacerme sentir bien despues de tanto tiempo,
+                por darme el cariño que me das, por los detalles tan hermosos que me has dado,
+                por llenar mis dias de amor y felicidad, sabes que eres una niña increible,
+                con un gran corazon, te mereces el mundo entero y yo solo espero poder dartelo en un futuro,
+                sabes que eres una pricesita preciosa, pero para mi siempre seras mi reina hermosa,
+                se que te dije alguna vez que no serias espectadora, por eso te hago este detalle, 
+                aunque no sea el ramo de flores, lo hago con mucho amor, pero te hago una promesa,
+                desde hoy cada 21 de septiembre te dare tus flores.
+        </div>
+    
+</body>
+</html>
